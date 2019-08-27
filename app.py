@@ -16,7 +16,8 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 app = Flask(__name__)
 app.config.from_pyfile('config.cfg')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://{}:{}@{}/{}'.format(app.config['POSTGRES_USER'],app.config['POSTGRES_PASSWORD'],app.config['POSTGRES_URL'],app.config['POSTGRES_DB'])
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
+#'postgresql://{}:{}@{}/{}'.format(app.config['POSTGRES_USER'],app.config['POSTGRES_PASSWORD'],app.config['POSTGRES_URL'],app.config['POSTGRES_DB'])
 #'sqlite:///' + os.path.join(basedir, 'data-dev.sqlite')
 
 db = SQLAlchemy(app)

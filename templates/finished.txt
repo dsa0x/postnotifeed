@@ -1,0 +1,2 @@
+Username: {{ user.username }} has exhausted his posts
+Quantity: {{user.quantity}}

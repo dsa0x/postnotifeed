@@ -1,0 +1,13 @@
+# dotenv
+.env
+
+# virtualenv
+.venv
+venv/
+ENV/
+
+
+# Flask stuff:
+instance/
+.webassets-cache
+

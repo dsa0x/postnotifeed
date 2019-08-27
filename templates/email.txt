@@ -1,0 +1,4 @@
+Username: {{ user.username }}
+New Post link: {{ user.last_post }}
+Quantity: {{user.quantity}}
+Post Left: {{user.number_of_posts}}

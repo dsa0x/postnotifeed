@@ -1,0 +1,6 @@
+
+New Auto Order: {{user.service_type}}
+Username: {{ user.username }}
+Last Post: {{ user.last_post }}
+Quantity: {{user.quantity}}
+Total Posts: {{user.number_of_posts}}

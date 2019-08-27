@@ -122,5 +122,5 @@ def delete(userr):
     return render_template('users.html',userr=userr)
 
 
-#if __name__ == '__main__':
-#    app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)

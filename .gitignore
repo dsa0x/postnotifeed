@@ -2,9 +2,9 @@
 .env
 
 # virtualenv
-.venv
-venv/
-ENV/
+*.bak
+*.pyc
+.DS_Store
 
 
 # Flask stuff:

@@ -73,3 +73,6 @@ def linkget(username):
         'link':link
     }
     return linkdict
+
+
+print(linkget('dreysammm'))
